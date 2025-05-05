@@ -1,6 +1,6 @@
 # Waste Segregation Using CNN
 ![Waste Classification Sample](static/images/image4.png)
-
+![Waste Classification Sample](static/images/image3.png)
 A Convolutional Neural Network (CNN)-based image classification system to automate the segregation of waste into **biodegradable** and **non-biodegradable** categories. This model can assist in sustainable waste management and reduce human intervention in the sorting process.
 
 ## 🧠 Project Overview
@@ -50,4 +50,3 @@ Conv2D → ReLU → MaxPooling
 
 Flatten → Dense → Dropout → Output (Sigmoid for binary classification)
 
-![Waste Classification Sample](static/images/image3.png)
