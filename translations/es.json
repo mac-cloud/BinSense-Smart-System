@@ -1,0 +1,33 @@
+{
+    "main_title": "Sistema Inteligente BinSense",
+    "subtitle": "Tus acciones importan, ¡empieza a clasificar!",
+    "learn_title": "Aprende por qué el reciclaje es importante",
+    "upload_text": "Sube tu imagen para determinar si tu objeto es orgánico o reciclable.",
+    "waste_category": "Categoría de Residuos",
+    "probability": "Probabilidad",
+    "recycle_smart": "Recicla con Inteligencia",
+    "recycle_smart_text": "Enjuaga los recipientes antes de tirarlos al contenedor de reciclaje.",
+    "know_organic": "Conoce lo Orgánico",
+    "know_organic_text": "Los residuos orgánicos pueden convertirse en compost — ¡sepáralos adecuadamente!",
+    "protect_earth": "Protege la Tierra",
+    "protect_earth_text": "El reciclaje reduce los vertederos y protege los ecosistemas.",
+    "organic_actions_title": "6 Acciones para Manejar los Residuos Orgánicos:",
+    "organic_actions": [
+      "Composta tus residuos orgánicos para enriquecer el suelo.",
+      "Separa los residuos orgánicos de los reciclables para evitar la contaminación.",
+      "Evita tirar residuos orgánicos en bolsas plásticas — usa bolsas biodegradables.",
+      "Utiliza un contenedor de compostaje en la cocina para desechar residuos fácilmente.",
+      "Educa a tu familia o compañeros de trabajo sobre la separación de residuos orgánicos.",
+      "Encuentra una instalación de compostaje local o empieza tu propia pila de compost en casa."
+    ],
+    "recyclable_actions_title": "6 Acciones para Manejar los Residuos Reciclables:",
+    "recyclable_actions": [
+      "Limpia los recipientes antes de reciclar para evitar la contaminación.",
+      "Aplana las cajas de cartón para ahorrar espacio en el contenedor de reciclaje.",
+      "Separa papel, plásticos, vidrio y metales para mejorar la eficiencia del reciclaje.",
+      "Evita colocar objetos no reciclables en el contenedor (ej. bolsas plásticas).",
+      "Educa a otros sobre la importancia del reciclaje.",
+      "Consulta con los programas locales de reciclaje sobre los materiales aceptados."
+    ]
+  }
+  

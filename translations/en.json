@@ -1,0 +1,33 @@
+{
+    "main_title": "BinSense Smart System",
+    "subtitle": "Your Actions Matter, Start Sorting!",
+    "learn_title": "Learn Why Recycling Matters",
+    "upload_text": "Upload your image to determine if your item is organic or recyclable.",
+    "waste_category": "Waste Category",
+    "probability": "Probability",
+    "recycle_smart": "Recycle Smart",
+    "recycle_smart_text": "Rinse containers before tossing them into the recycle bin.",
+    "know_organic": "Know Organic",
+    "know_organic_text": "Organic waste can become compost — separate it properly!",
+    "protect_earth": "Protect Earth",
+    "protect_earth_text": "Recycling reduces landfill and protects ecosystems.",
+    "organic_actions_title": "Here are 6 Actions to Take for Organic Waste:",
+    "organic_actions": [
+      "Compost your organic waste to enrich soil.",
+      "Separate organic waste from recyclables to prevent contamination.",
+      "Avoid throwing organic waste in plastic bags — use biodegradable bags instead.",
+      "Use a kitchen compost bin for easy disposal of organic scraps.",
+      "Educate your family or coworkers on separating organic waste.",
+      "Find a local composting facility or start your own compost pile at home."
+    ],
+    "recyclable_actions_title": "Here are 6 Actions to Take for Recyclable Waste:",
+    "recyclable_actions": [
+      "Clean containers before recycling to avoid contamination.",
+      "Flatten cardboard boxes to save space in the recycling bin.",
+      "Separate paper, plastics, glass, and metals for better recycling efficiency.",
+      "Avoid putting non-recyclable items in the recycling bin (e.g., plastic bags).",
+      "Educate others about the importance of recycling.",
+      "Check with local recycling programs for guidelines on materials accepted."
+    ]
+  }
+  

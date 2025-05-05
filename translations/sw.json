@@ -1,0 +1,33 @@
+{
+    "main_title": "Mfumo Mahiri wa BinSense",
+    "subtitle": "Matendo Yako Ni Muhimu, Anza Kuchambua!",
+    "learn_title": "Jifunze Kwa Nini Usafishaji ni Muhimu",
+    "upload_text": "Pakia picha yako ili kubaini kama kitu chako ni kikaboni au kinachoweza kurejelewa.",
+    "waste_category": "Aina ya Taka",
+    "probability": "Uwezekano",
+    "recycle_smart": "Rejeleza Kwa Busara",
+    "recycle_smart_text": "Osha vyombo kabla ya kuvitupa kwenye pipa la kurejelewa.",
+    "know_organic": "Tambua Kikaboni",
+    "know_organic_text": "Taka za kikaboni zinaweza kuwa mboji — zitenganishe ipasavyo!",
+    "protect_earth": "Linda Dunia",
+    "protect_earth_text": "Usafishaji unapunguza dampo na hulinda mazingira.",
+    "organic_actions_title": "Haya ndiyo Mambo 6 ya Kufanya kwa Taka za Kikaboni:",
+    "organic_actions": [
+      "Tengeneza mboji kwa kutumia taka zako za kikaboni ili kuboresha udongo.",
+      "Tenganisha taka za kikaboni na taka za kurejelewa ili kuepusha kuchanganyika.",
+      "Epuka kutupa taka za kikaboni kwenye mifuko ya plastiki — tumia mifuko inayooza.",
+      "Tumia pipa maalum jikoni kwa ajili ya kutupa mabaki ya chakula kwa urahisi.",
+      "Fundisha familia yako au wafanyakazi wenzako kuhusu kutenganisha taka za kikaboni.",
+      "Tafuta kituo cha mboji kilicho karibu au anza kutengeneza mboji nyumbani."
+    ],
+    "recyclable_actions_title": "Haya ndiyo Mambo 6 ya Kufanya kwa Taka za Kurejelewa:",
+    "recyclable_actions": [
+      "Safisha vyombo kabla ya kuvirejelewa ili kuepusha kuchafua taka nyingine.",
+      "Banisha masanduku ya kadibodi ili kuokoa nafasi kwenye pipa la kurejelewa.",
+      "Tenganisha karatasi, plastiki, glasi, na metali kwa ufanisi zaidi wa urejelezaji.",
+      "Epuka kuweka vitu visivyoweza kurejelewa kwenye pipa (mf. mifuko ya plastiki).",
+      "Fundisha wengine kuhusu umuhimu wa kurejelewa.",
+      "Angalia miongozo ya programu za kurejelewa katika eneo lako kuhusu vitu vinavyokubalika."
+    ]
+  }
+  

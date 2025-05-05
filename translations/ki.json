@@ -1,0 +1,33 @@
+{
+    "main_title": "BinSense Sisitemu Nyingi",
+    "subtitle": "Ciiko Ciaku Ni Thĩna, Ambĩrĩria Gũcagũra!",
+    "learn_title": "Menya Ibaba Rĩĩ Recycle Rĩ Nĩ Thĩna",
+    "upload_text": "Nĩgũũkũrũria mbica yaku nĩguo ũmenye kana kĩndũ giaku nĩ kĩa mũthemba wa kũhonia kana nĩ kĩa gũrecycle.",
+    "waste_category": "Mũthemba wa Nyarĩra",
+    "probability": "Ũhoti",
+    "recycle_smart": "Recycle na Ũũgĩ",
+    "recycle_smart_text": "Thambia mĩkĩnga mbere ya gũikĩa thĩinĩ wa bin rĩa recycle.",
+    "know_organic": "Menya Kĩa Mũthemba wa Kũhonia",
+    "know_organic_text": "Nyarĩra ya mũthemba wa kũhonia no ĩtuĩke mbolea — īcagũre wega!",
+    "protect_earth": "Gitĩra Thĩ",
+    "protect_earth_text": "Gũrecycle kũuu ragana nyarĩra mũgũnda na kũgitĩra mĩthemba ya mĩmera na nyamũ.",
+    "organic_actions_title": "Gũkũ nĩ Ciiko 6 cia Kwĩka nĩ ũndũ wa Nyarĩra ya Mũthemba wa Kũhonia:",
+    "organic_actions": [
+      "Honya nyarĩra yaku ya mũthemba wa kũhonia nĩguo ũthonge thĩ.",
+      "Cagũra nyarĩra ya mũthemba wa kũhonia kuuma nyarĩra ya gũrecycle nĩguo ũgitĩre kwonanjĩka.",
+      "Ĩgitĩre gũikĩa nyarĩra ya mũthemba wa kũhonia thĩinĩ wa mĩtĩ ya burasta — hũthĩra mĩtĩ ĩthũkĩkaga handũ yacio.",
+      "Hũthĩra bin rĩa kũhonia thĩinĩ wa nyũmba nĩ ũndũ wa kũikĩa nyarĩra yaku ya gũthonia o ũrĩ kũhũthũka.",
+      "Ruthanĩria famĩlĩ yaku kana aruti wĩra akorũo a cio gũcagũra nyarĩra ya mũthemba wa kũhonia.",
+      "Cara taũni yanyu handũ harĩ mĩbango ya kũhonia kana wambĩrĩrie gũthonia nyarĩra yaku mũciĩ."
+    ],
+    "recyclable_actions_title": "Gũkũ nĩ Ciiko 6 cia Kwĩka nĩ ũndũ wa Nyarĩra ya Gũrecycle:",
+    "recyclable_actions": [
+      "Thambia mĩkĩnga mbere ya gũrecycle nĩguo ũgitĩre kwonanjĩka.",
+      "Tetheũra maboksi ma kabodi nĩguo ũigane handũ thĩinĩ wa bin rĩa gũrecycle.",
+      "Cagũra karatasi, burasta, ndirahĩ na mathina nĩ ũndũ wa ũhoti mwega wa gũrecycle.",
+      "Ĩgitĩre gũikĩa indo itagũrecycle thĩinĩ wa bin rĩa gũrecycle (ĩĩ, mĩtĩ ya burasta).",
+      "Ruthanĩria andũ angĩ igũrũ rĩa bata wa gũrecycle.",
+      "Cũngĩrĩria na mĩbango ya gũrecycle ya taũni yanyu nĩ ũndũ wa mĩtaratara igũrũ rĩa indo ciathĩkĩrĩrio."
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+{
+    "main_title": "Système Intelligent BinSense",
+    "subtitle": "Vos actions comptent, commencez à trier !",
+    "learn_title": "Découvrez pourquoi le recyclage est important",
+    "upload_text": "Téléchargez votre image pour déterminer si votre objet est organique ou recyclable.",
+    "waste_category": "Catégorie de Déchet",
+    "probability": "Probabilité",
+    "recycle_smart": "Recyclez de Manière Intelligente",
+    "recycle_smart_text": "Rincez les contenants avant de les jeter dans la poubelle de recyclage.",
+    "know_organic": "Connaître l’Organique",
+    "know_organic_text": "Les déchets organiques peuvent devenir du compost — séparez-les correctement !",
+    "protect_earth": "Protéger la Terre",
+    "protect_earth_text": "Le recyclage réduit les décharges et protège les écosystèmes.",
+    "organic_actions_title": "6 Actions à Mener pour les Déchets Organiques :",
+    "organic_actions": [
+      "Compostez vos déchets organiques pour enrichir le sol.",
+      "Séparez les déchets organiques des recyclables pour éviter la contamination.",
+      "Évitez de jeter les déchets organiques dans des sacs plastiques — utilisez des sacs biodégradables.",
+      "Utilisez une poubelle de compostage dans la cuisine pour jeter facilement les restes.",
+      "Sensibilisez votre famille ou vos collègues à la séparation des déchets organiques.",
+      "Trouvez une installation de compostage locale ou commencez un compost chez vous."
+    ],
+    "recyclable_actions_title": "6 Actions à Mener pour les Déchets Recyclables :",
+    "recyclable_actions": [
+      "Nettoyez les contenants avant de les recycler pour éviter la contamination.",
+      "Aplatissez les cartons pour gagner de la place dans la poubelle de recyclage.",
+      "Séparez le papier, le plastique, le verre et les métaux pour un recyclage efficace.",
+      "N’ajoutez pas d’objets non recyclables dans la poubelle (par ex. sacs plastiques).",
+      "Sensibilisez les autres à l’importance du recyclage.",
+      "Consultez les programmes de recyclage locaux pour connaître les matériaux acceptés."
+    ]
+  }
+  

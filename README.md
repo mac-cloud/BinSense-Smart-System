@@ -24,18 +24,23 @@ We followed this article's steps to set up our Flask App:
 **Link:** https://medium.com/@arifulislam_ron/flask-web-application-to-classify-image-using-vgg16-d9c46f29c4cd  
 **Author:** Arif Ul Islam (Ron)
 
-![3-App](Resources/Images/image_app.png)
+![(Resources/static/images/image1.png)]
+![(Resources/static/images/image1.png)]
+![(Resources/static/images/image1.png)]
+![(Resources/static/images/image1.png)]
 
 ### Conclusions
 This is just a small step in applying machine learning to recylcing and waste sorting. In order to make a significant impact in waste sorting plants and on the recycling rate globally, much more sophisticated models, i.e., ones that can classify materials into multiple categories and sub-categories, would need to be developed so that waste could be efficiently and correctly sorted at a large scale level.
 
 ## How to run this app locally:
+python main.py 
 
 ### Setup/Requirements:
 * Visual Studio Code (suggested)
 * Chrome browser recommended
 * Python (required)
 * See the dependencies, which may require installation
+
 
 ### File Structure:
 

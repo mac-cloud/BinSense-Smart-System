@@ -1,75 +1,225 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-  </head>
-    
-    <!-- Landing Page -->
-   <body>
-    <!-- Slides  -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: #3E7EE6;">
-      <div class="container">
-        <h1 class="display-4" style="color:white; text-align: center;">Is this recyclable?</h1>
-        <p class="lead" style="color:white; text-align: center;" >Upload your image to determine if your item is organic or recyclable.</p>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+
+  <body>
+  <!-- Landing Page Jumbotron -->
+<div class="jumbotron jumbotron-fluid position-relative">
+	<div class="container">
+	  <div class="row align-items-center">
+		<div class="col-md-2">
+		  <img src="/static/images/logo.jpg" alt="Logo" style="height: 80px; width: 100px; border-radius: 50px;">
+		</div>
+		<div class="col-md-10 text-center">
+		  <h1 id="main-title">BinSense Smart System</h1>
+		  <h1 id="subtitle" class="display-4">Your Actions Matter, Start Sorting!</h1>
+		</div>
+	  </div>
+	</div>
+	<!-- Language selector positioned at top right -->
+	<div style="position: absolute; top: 20px; right: 20px;">
+	  <select id="language-selector" onchange="changeLanguage(event)" class="form-control">
+		<option value="en">English</option>
+		<option value="sw">Kiswahili</option>
+		<option value="ki">Kikuyu</option>
+		<option value="es">Español</option>
+		<option value="fr">Français</option>
+		<option value="mc">Mexico</option>
+	  </select>
+	</div>
+  </div>
+  <!--
+  <div class="container">
+    <h1>🎙️ BinSense Voice Waste Classifier</h1>
+    <button onclick="startListening()">🎤 Speak Item</button>
+    <p id="transcript"></p>
+    <p id="result"></p>
+  </div>
+-->
+    <!-- Video and Upload Section -->
+    <div class="container my-5 video-section">
+      <div class="col-md-6">
+        <h2 id="learn-title" class="mb-4 text-center">Learn Why Recycling Matters</h2>
+        <iframe src="https://www.youtube.com/embed/Lfj8SKFlTpI" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-md-6 upload-section">
+        <form method="post" action="/" enctype="multipart/form-data">
+          <div class="form-group text-center">
+            <p id="upload-text" style="color: black; font-size: large;">Upload your image to determine if your item is organic or recyclable.</p>
+            <input type="file" name="file" class="form-control-file" id="file-input" required onchange="loadFile(event)">
+            <input type="hidden" name="language" id="language-hidden" value="en">
+          </div>
+
+          <div id="drag-drop-area" class="text-center" ondrop="dropFile(event)" ondragover="allowDrop(event)">
+            <p>Drag and drop your file here, or click to select a file.</p>
+          </div>
+
+          <div class="form-group text-center">
+            <img id="output" width="200" class="img-fluid"/>
+          </div>
+
+          <div class="form-group text-center">
+            <input type="submit" class="btn btn-primary" value="Submit" style="background-color: green;">
+          </div>
+        </form>
       </div>
     </div>
 
-	<div class="container">
-		<div class="row">
-		  <div class="col-sm-3">
-		  </div>
-		  <div class="col-sm-3">
-			<p class="lead">
-				<form method="post" action="/" enctype="multipart/form-data">
-				  <dl>
-				<p>
-				  <input type="file" name="file" autocomplete="off" required onchange="loadFile(event)">
-				</p>
-				  </dl>
-				<p><img id="output" width="200" /></p>
-				  <p>
-				<input type="submit" value="Submit">
-				  </p>
-			  </form>
-			  </p>
-		  </div>
-		  <div class="col-sm-3">
-			<p>
-				<div id= "results">
-					<h5 style="background-color:#3E7EE6; text-align: center; font-family:sans-serif; color:white; padding-top: 30px; padding-bottom: 30px;"><span>
-						{% with messages = get_flashed_messages() %}
-						{% if messages %}
-							Waste Category: {{ messages[0] }}
-						<br>
-							Probability: {{ messages[1] }}
-							<img src="{{ url_for('static', filename=messages[2])}}"> 
-						{% endif %}
-						 {% endwith %}
-					</span>
-					</h5>
-				</div>
-			</p>
-		  </div>
-		  <div class="col-sm-3"></div>
-		  
-		</div>
-	  </div>
-	<div>
-		  <script>
-		  var loadFile = function(event) {
-			var image = document.getElementById('output');
-			image.src = URL.createObjectURL(event.target.files[0]);
+    <!-- Results Section -->
+    <div class="container results-section">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <script>
+              const wasteCategory = "{{ messages[0] }}";
+              const probability = "{{ messages[1] }}";
+              const resultImage = "{{ url_for('static', filename=messages[2]) }}";
+            </script>
+            <h5 id="waste-category"></h5>
+            <h5 id="probability"></h5>
+            <img id="result-image" src="" class="img-fluid">
+            <h5 id="action-title" class="mt-3" style="font-size: 28px;"></h5>
+            <ul id="waste-actions" class="text-left d-inline-block"></ul>
+          {% endif %}
+          {% endwith %}
+        </div>
+      </div>
+    </div>
 
-		  };
-		  </script>
-		
-	</div>
-    
+    <!-- Educational Tips Section -->
+    <div class="container educational-tips" data-aos="fade-up">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYv_9LN2XISL_xpE8UFukWUELv4Baa9j1rg&s" class="icon-img"/>
+          <h4 id="recycle-smart">Recycle Smart</h4>
+          <p id="recycle-smart-text">Rinse containers before tossing them into the recycle bin.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://img.icons8.com/color/96/000000/organic-food.png" class="icon-img"/>
+          <h4 id="know-organic">Know Organic</h4>
+          <p id="know-organic-text">Organic waste can become compost — separate it properly!</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://img.icons8.com/color/96/000000/globe-earth.png" class="icon-img"/>
+          <h4 id="protect-earth">Protect Earth</h4>
+          <p id="protect-earth-text">Recycling reduces landfill and protects ecosystems.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- Translation Script -->
+    <script>
+      let currentLanguage = '{{ language }}';
+
+      const translations = {
+        en: 'translations/en.json',
+        es: 'translations/es.json',
+        fr: 'translations/fr.json',
+		sw: 'translations/sw.json',
+		ki: 'translations/ki.json',
+		mc: 'translations/mc.json',
+      };
+
+      function loadTranslations(language) {
+        fetch(translations[language])
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('main-title').innerText = data.main_title;
+            document.getElementById('subtitle').innerText = data.subtitle;
+            document.getElementById('learn-title').innerText = data.learn_title;
+            document.getElementById('upload-text').innerText = data.upload_text;
+            document.getElementById('recycle-smart').innerText = data.recycle_smart;
+            document.getElementById('recycle-smart-text').innerText = data.recycle_smart_text;
+            document.getElementById('know-organic').innerText = data.know_organic;
+            document.getElementById('know-organic-text').innerText = data.know_organic_text;
+            document.getElementById('protect-earth').innerText = data.protect_earth;
+            document.getElementById('protect-earth-text').innerText = data.protect_earth_text;
+
+            if (typeof wasteCategory !== 'undefined') {
+              document.getElementById('waste-category').innerText = data.waste_category + ': ' + wasteCategory;
+              document.getElementById('probability').innerText = data.probability + ': ' + probability;
+              document.getElementById('result-image').src = resultImage;
+
+              let actions = [];
+              let actionTitle = '';
+
+              if (wasteCategory.toLowerCase() === 'organic') {
+                actionTitle = data.organic_actions_title;
+                actions = data.organic_actions;
+              } else if (wasteCategory.toLowerCase() === 'recyclable') {
+                actionTitle = data.recyclable_actions_title;
+                actions = data.recyclable_actions;
+              }
+
+              document.getElementById('action-title').innerText = actionTitle;
+              const actionsList = document.getElementById('waste-actions');
+              actionsList.innerHTML = '';
+              actions.forEach((action, i) => {
+                const li = document.createElement('li');
+                li.innerText = `${i + 1}. ${action}`;
+                actionsList.appendChild(li);
+              });
+            }
+          })
+          .catch(error => console.error('Error loading translations:', error));
+      }
+
+      function changeLanguage(event) {
+        currentLanguage = event.target.value;
+        document.getElementById('language-hidden').value = currentLanguage;
+        loadTranslations(currentLanguage);
+      }
+
+      loadTranslations(currentLanguage);
+
+
+
+if (!('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
+  alert("Speech Recognition API is not supported in your browser. Please use Chrome or Edge.");
+}
+
+
+const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+recognition.lang = 'en-US';
+recognition.interimResults = false;
+
+recognition.onstart = function() {
+  console.log("Microphone access granted and listening started.");
+};
+
+recognition.onerror = function(event) {
+  if (event.error === "not-allowed") {
+    alert("Microphone access was denied. Please allow microphone access.");
+  } else {
+    alert(`Error occurred: ${event.error}`);
+  }
+};
+
+recognition.onend = function() {
+  console.log("Microphone access ended.");
+};
+
+function startListening() {
+  recognition.start(); // Start the speech recognition process
+}
+
+    </script>
   </body>
 </html>

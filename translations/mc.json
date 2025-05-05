@@ -1,0 +1,33 @@
+{
+    "main_title": "BinSense Sistema Inteligente",
+    "subtitle": "¡Tus Acciones Importan, Comienza a Clasificar!",
+    "learn_title": "Aprende Por Qué Es Importante Reciclar",
+    "upload_text": "Sube tu imagen para determinar si tu artículo es orgánico o reciclable.",
+    "waste_category": "Categoría de Residuos",
+    "probability": "Probabilidad",
+    "recycle_smart": "Recicla de Manera Inteligente",
+    "recycle_smart_text": "Enjuaga los envases antes de tirarlos al bote de reciclaje.",
+    "know_organic": "Conoce lo Orgánico",
+    "know_organic_text": "Los residuos orgánicos pueden convertirse en composta — ¡sepáralos correctamente!",
+    "protect_earth": "Protege la Tierra",
+    "protect_earth_text": "Reciclar reduce los vertederos y protege los ecosistemas.",
+    "organic_actions_title": "Aquí Hay 6 Acciones para Tomar con los Residuos Orgánicos:",
+    "organic_actions": [
+      "Composta tus residuos orgánicos para enriquecer el suelo.",
+      "Separa los residuos orgánicos de los reciclables para evitar la contaminación.",
+      "Evita tirar los residuos orgánicos en bolsas de plástico — usa bolsas biodegradables en su lugar.",
+      "Usa un bote de compostaje en la cocina para facilitar la disposición de los restos orgánicos.",
+      "Educa a tu familia o compañeros de trabajo sobre la separación de residuos orgánicos.",
+      "Busca una instalación local de compostaje o comienza tu propia pila de compost en casa."
+    ],
+    "recyclable_actions_title": "Aquí Hay 6 Acciones para Tomar con los Residuos Reciclables:",
+    "recyclable_actions": [
+      "Limpia los envases antes de reciclar para evitar la contaminación.",
+      "Aplana las cajas de cartón para ahorrar espacio en el bote de reciclaje.",
+      "Separa el papel, los plásticos, el vidrio y los metales para una mejor eficiencia en el reciclaje.",
+      "Evita poner artículos no reciclables en el bote de reciclaje (por ejemplo, bolsas de plástico).",
+      "Educa a otros sobre la importancia de reciclar.",
+      "Consulta con los programas locales de reciclaje para conocer las pautas sobre los materiales aceptados."
+    ]
+  }
+  
