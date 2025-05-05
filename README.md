@@ -20,9 +20,6 @@ We built a convolutional neural network model using Keras and Tensorflow. The ba
 ### Front End Application
 We built a front-end web application using Python Flask, which employs the following packages: flask, keras, numpy, tensorflow, and pillow. The web app allows users to upload a photo of their choice. We created two python scripts that renders the image from the uploading form and is then feeds it into our waste classification model. Specifically, we defined a function that calls the model prediction for each uploaded image, and we then linked these scripts to an html file to return a classification for the image: "Organic" or "Recyced", along with the probability score. 
 
-We followed this article's steps to set up our Flask App:  
-**Link:** https://medium.com/@arifulislam_ron/flask-web-application-to-classify-image-using-vgg16-d9c46f29c4cd  
-**Author:** Arif Ul Islam (Ron)
 
 ![(Resources/static/images/image1.png)]
 ![(Resources/static/images/image1.png)]
@@ -34,13 +31,6 @@ This is just a small step in applying machine learning to recylcing and waste so
 
 ## How to run this app locally:
 python main.py 
-
-### Setup/Requirements:
-* Visual Studio Code (suggested)
-* Chrome browser recommended
-* Python (required)
-* See the dependencies, which may require installation
-
 
 ### File Structure:
 
@@ -60,8 +50,6 @@ project (main project folder)
 └───static (uploaded images will be stored here) -- must be named "static"
        
 ```
-
-**Note:** Within the index.py and main.py files, you may need to change some file paths to match your system path structure. Within the main.py file, change the paths for line 14 and 15. Within the index.py file, change the paths for lines 14 and 41. 
 
 ## Steps:
 * Download files into the above file structure
